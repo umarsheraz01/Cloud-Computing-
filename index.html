@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hello, World!</h1>
+        <p>This is a simple HTML page with some styling.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "You clicked the button!";
+        }
+    </script>
+
+</body>
+</html>
