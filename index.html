@@ -1,55 +1,266 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umar Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
-
 <body>
 
-<header>
-    <h1>My Portfolio</h1>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Umar<span>.</span></div>
 
     <nav>
-        <a href="#" class="btn">Home</a>
-        <a href="#" class="btn">My Work</a>
-        <a href="#" class="btn">Studies</a>
-        <a href="#" class="btn">Projects</a>
-        <a href="#" class="btn">Contact</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Bio</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h2>Hello, I'm Your Name</h2>
+  <!-- HOME -->
+  <section class="hero" id="home">
 
-    <p>
-        Cloud Computing & Web Development Student
-    </p>
+    <div class="hero-text">
+      <h3>Hello There 👋</h3>
 
-    <button class="hero-btn">Explore More</button>
-</section>
+      <h1>
+        Muhammad <br />
+        Umar Sheraz
+      </h1>
 
-<section class="cards">
+      <h2>Student ID: 2417302</h2>
 
-    <div class="card">
-        <h3>Web Development</h3>
-        <p>Creating responsive and modern websites.</p>
+      <p>
+        Passionate developer focused on creating modern,
+        clean and interactive digital experiences with
+        beautiful design and smooth user interfaces.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">
+          Explore My Work
+        </a>
+
+        <a href="#contact" class="btn secondary-btn">
+          Contact Me
+        </a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
 
-    <div class="card">
-        <h3>Cloud Computing</h3>
-        <p>Learning GitHub, hosting, and cloud platforms.</p>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+        alt="Computer Setup"
+      />
     </div>
 
-    <div class="card">
-        <h3>Projects</h3>
-        <p>Building practical portfolio and lab projects.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
     </div>
 
-</section>
+    <div class="about-content">
+      <div class="about-text">
+
+        <p>
+          I'm Muhammad Umar Sheraz, a passionate developer who enjoys
+          building modern websites and creative digital experiences.
+        </p>
+
+        <p>
+          My interest in technology started from curiosity and slowly
+          turned into a passion for designing interfaces, creating
+          responsive layouts and learning new development skills.
+        </p>
+
+        <p>
+          I like keeping things minimal, clean and visually attractive.
+          Every project I work on is focused on simplicity, smooth
+          interaction and modern aesthetics.
+        </p>
+
+      </div>
+
+      <div class="about-cards">
+
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Building responsive and modern websites.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-pen-nib"></i>
+          <h3>UI / UX Design</h3>
+          <p>
+            Clean layouts with smooth user experience.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Creative Thinking</h3>
+          <p>
+            Turning ideas into elegant digital projects.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+
+    <div class="section-title">
+      <h2>My <span>Projects</span></h2>
+    </div>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000&auto=format&fit=crop"
+          alt=""
+        />
+
+        <h3>Personal Portfolio</h3>
+
+        <p>
+          A modern portfolio website designed with a clean
+          interface and responsive layout.
+        </p>
+
+        <a href="#" class="btn primary-btn">
+          View Project
+        </a>
+      </div>
+
+      <div class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop"
+          alt=""
+        />
+
+        <h3>Weather Application</h3>
+
+        <p>
+          A simple and interactive weather app concept focused
+          on minimal design.
+        </p>
+
+        <a href="#" class="btn primary-btn">
+          View Project
+        </a>
+      </div>
+
+      <div class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1000&auto=format&fit=crop"
+          alt=""
+        />
+
+        <h3>E-Commerce Interface</h3>
+
+        <p>
+          A stylish shopping website UI created with modern
+          design principles.
+        </p>
+
+        <a href="#" class="btn primary-btn">
+          View Project
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <h2>Contact <span>Me</span></h2>
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+
+        <p>
+          Have an idea, project or collaboration in mind?
+          Feel free to reach out and let's create something
+          amazing together.
+        </p>
+
+        <div class="info-box">
+          <i class="fas fa-envelope"></i>
+          <span>umar.sheraz@example.com</span>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-phone"></i>
+          <span>+92 300 1234567</span>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-location-dot"></i>
+          <span>Pakistan</span>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+      </div>
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="8" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="btn primary-btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Muhammad Umar Sheraz. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
